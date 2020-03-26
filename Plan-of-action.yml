@@ -1,0 +1,30 @@
+
+PART-1:
+=====
+The idea is to make this website as a template to be used by district authorities.
+
+District authorities have data like:
+  - how many infected in their district
+  - how many hospitals are there in their district
+  - capacity of each hospital
+
+Giving this template to all district authorities enables them to get a a very precise prediction on: 
+  - how much time does an average infected person remain in hospital
+  - how much time {days} would it take before their hospitals have exhausted all their resources.
+  - If COVID numbers in their district is coming down by social distancing
+  - If proper action not taken, then in how many days will this number double
+  - If action taken properly, how many days to recover
+  - How much time does an average infected person remain in ICU/Ventilator
+
+
+
+PART-2:
+=====
+Step-1: Remove the manual input provided by Hospital by collecting the data automatically { where ever possible }
+
+Step-2: Collect covid-19 real time data: { twice per day basis}
+		How many infected?
+		How many cured?
+		How many severe?
+
+Step-3: Create a template which can be passed to all ostpital admins 

@@ -1,8 +1,0 @@
-Step-1: Remove the manual input provided by Hospital by collecting the data automatically { where ever possible }
-
-Step-2: Collect covid-19 real time data: { twice per day basis}
-		How many infected?
-		How many cured?
-		How many severe?
-
-Step-3: Create a template which can be passed to all ostpital admins 
