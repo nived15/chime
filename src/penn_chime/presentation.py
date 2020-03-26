@@ -39,18 +39,18 @@ def display_header(st, p):
 <div class="penn-medicine-header__content">
     <a href="https://www.pennmedicine.org" class="penn-medicine-header__logo"
         title="Go to the Penn Medicine home page">Penn Medicine</a>
-    <a id="title" class="penn-medicine-header__title">Penn Medicine - COVID-19 Hospital Impact Model for Epidemics</a>
+    <a id="title" class="penn-medicine-header__title">COVID-19 Hospital Impact Model for Epidemics</a>
 </div>
     """,
         unsafe_allow_html=True,
     )
     st.markdown(
-        """**IMPORTANT NOTICE**: Admissions and Census calculations were previously **undercounting**. Please update your reports generated before """ + p.change_date() + """. See more about changes [here](https://github.com/CodeForPhilly/chime/labels/models)."""
+        """**IMPORTANT NOTICE**: Admissions and Census calculations were previously **undercounting**. Please update your reports generated before """ + p.change_date() + """. See more about changes [here](https://github.com/nived15/chime/)."""
     )
     st.markdown(
-        """*This tool was developed by the [Predictive Healthcare team](http://predictivehealthcare.pennmedicine.org/) at
-    Penn Medicine. For questions on how to use this tool see the [User docs](https://code-for-philly.gitbook.io/chime/). Code can be found on [Github](https://github.com/CodeForPhilly/chime).
-    Join our [Slack channel](https://codeforphilly.org/chat?channel=covid19-chime-penn) if you would like to get involved!*"""
+        """*This tool was originally developed by the [Predictive Healthcare team](http://predictivehealthcare.pennmedicine.org/) at
+    Penn Medicine. 
+    It has been opensourced since the outbreak and we have modified it to make it more relavent for India. Please feel free to contact us if you would like to get involved!*"""
     )
 
     st.markdown(
@@ -254,7 +254,7 @@ The epidemic proceeds via a growth and decline process. This is the core model o
     st.latex("R_{t+1} = (\\gamma I_t) + R_t")
 
     st.markdown(
-        """To project the expected impact to Penn Medicine, we estimate the terms of the model.
+        """To project the expected impact to each district, we estimate the terms of the model.
 
 To do this, we use a combination of estimates from other locations, informed estimates based on logical reasoning, and best guesses from the American Hospital Association.
 

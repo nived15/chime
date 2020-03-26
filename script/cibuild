@@ -10,4 +10,4 @@ script/bootstrap
 
 echo
 echo "==> Building and tagging container…"
-docker build -t codeforphilly/chime .
+docker build -t callforcode/chime .
