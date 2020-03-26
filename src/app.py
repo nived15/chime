@@ -3,7 +3,7 @@
 import altair as alt  # type: ignore
 import streamlit as st  # type: ignore
 
-from penn_chime.presentation import (
+from india_chime.presentation import (
     build_download_link,
     display_header,
     display_sidebar,
@@ -16,9 +16,9 @@ from penn_chime.presentation import (
     write_definitions,
     write_footer,
 )
-from penn_chime.settings import DEFAULTS
-from penn_chime.models import sim_sir_df, build_admissions_df, build_census_df
-from penn_chime.charts import (additional_projections_chart,
+from india_chime.settings import DEFAULTS
+from india_chime.models import sim_sir_df, build_admissions_df, build_census_df
+from india_chime.charts import (additional_projections_chart,
                                admitted_patients_chart,
                                new_admissions_chart,
                                chart_descriptions)

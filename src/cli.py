@@ -8,9 +8,9 @@ from datetime import datetime
 
 from pandas import DataFrame
 
-from penn_chime.parameters import Parameters
-from penn_chime.utils import RateLos
-from penn_chime.models import build_admissions_df, build_census_df
+from india_chime.parameters import Parameters
+from india_chime.utils import RateLos
+from india_chime.models import build_admissions_df, build_census_df
 
 class FromFile(Action):
     """From File."""
