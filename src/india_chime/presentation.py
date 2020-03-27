@@ -34,11 +34,11 @@ def display_header(st, p):
     )
     st.markdown(
         """
-<link rel="stylesheet" href="https://www1.pennmedicine.org/styles/shared/penn-medicine-header.css">
+<link rel="stylesheet" href="https://vishnuks.s3.amazonaws.com/custom.css">
 
 <div class="penn-medicine-header__content">
-    <a href="https://www.pennmedicine.org" class="penn-medicine-header__logo"
-        title="Go to the Penn Medicine home page">Penn Medicine</a>
+    <a href="https://phehealthcare.com/" class="penn-medicine-header__logo"
+        title="Go to the Preventive Healthcare home page">PHE </a>
     <a id="title" class="penn-medicine-header__title">COVID-19 Hospital Impact Model for Epidemics</a>
 </div>
     """,
@@ -48,7 +48,7 @@ def display_header(st, p):
         """**IMPORTANT NOTICE**: Admissions and Census calculations were previously **undercounting**. Please update your reports generated before """ + p.change_date() + """. See more about changes [here](https://github.com/nived15/chime/)."""
     )
     st.markdown(
-        """*This tool was originally developed by the [Predictive Healthcare team](http://predictivehealthcare.pennmedicine.org/) at
+        """*This tool was originally developed by the Predictive Healthcare team at
     Penn Medicine. 
     It has been opensourced since the outbreak and we have modified it to make it more relavent for India. Please feel free to contact us if you would like to get involved!*"""
     )
