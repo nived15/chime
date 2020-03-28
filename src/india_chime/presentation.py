@@ -358,13 +358,25 @@ def write_definitions(st):
 
 
 def write_footer(st):
-    st.subheader("References & Acknowledgements")
+    st.subheader("Contributors")
     st.markdown(
-        """* AHA Webinar, Feb 26, James Lawler, MD, an associate professor University of Nebraska Medical Center, What Healthcare Leaders Need To Know: Preparing for the COVID-19
-* We would like to recognize the valuable assistance in consultation and review of model assumptions by Michael Z. Levy, PhD, Associate Professor of Epidemiology, Department of Biostatistics, Epidemiology and Informatics at the Perelman School of Medicine
-    """
-    )
-    st.markdown("© 2020, The Trustees of the University of Pennsylvania")
+   f"""<figure style="display:inline-block">
+<a href="https://www.linkedin.com/in/nivedv/"><img src="https://media-exp1.licdn.com/dms/image/C5103AQElyHtkPuSd8w/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=GFLO2b7QBV_UTMi9odv_n3ylqDBzZRaYfteLbtqnp18" width="100px;" alt=""/>
+<figcaption>Nived V</figcaption>
+</figure>
+<figure style="display:inline-block">
+<a href="https://www.linkedin.com/in/iamvishnuks"><img src="https://media-exp1.licdn.com/dms/image/C5103AQGW6gixb_k4og/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=9mvXKJ_Rj0Pj7EP4Py6SOrsSp5gV7MUrTl6QWuyv-Ic" width="100px;" alt=""/><br />
+<figcaption>Vishnu KS</figcaption>
+</figure>
+<figure style="display:inline-block">
+<a href="https://www.linkedin.com/in/sanjuraj/"><img src="https://media-exp1.licdn.com/dms/image/C4D03AQFpvDs7o7ruxQ/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=01X2PR7G9bOAyybHcTm_k1MNNr5OBK5l8ZXKAZgK_Ts" width="100px;" alt=""/><br />
+<figcaption>Sanju Raj</figcaption>
+</figure>
+<figure style="display:inline-block">
+<a href="https://www.linkedin.com/in/sruthichiramel/"><img src="https://media-exp1.licdn.com/dms/image/C4D03AQHvmWzdAqHb9g/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=0nEzIyaCbh_RmdP4OCCDza54tHl3XlaJr4h2QpWybXY" width="100px;" alt=""/>
+<figcaption>Sruthi Chiramel</figcaption>
+</figure>""",unsafe_allow_html=True)
+    st.markdown("")
 
 
 def show_additional_projections(
