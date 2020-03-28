@@ -50,7 +50,7 @@ def display_header(st, p):
     st.markdown(
         """*This tool was originally developed by the Predictive Healthcare team at
     Penn Medicine. 
-    It has been opensourced since the outbreak and we have modified it to make it more relavent for India. Please feel free to contact us if you would like to get involved!*"""
+    **It has been opensourced since the outbreak and we have modified it so any hospitals/health authorities in India can use this tool for planning and capacity building.** Please feel free to contact us if you would like to get involved!*"""
     )
 
     st.markdown(
@@ -360,8 +360,12 @@ def write_definitions(st):
 def write_footer(st):
     st.subheader("Contributors")
     st.markdown(
-   f"""<figure style="display:inline-block">
-<a href="https://www.linkedin.com/in/nivedv/"><img src="https://media-exp1.licdn.com/dms/image/C5103AQElyHtkPuSd8w/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=GFLO2b7QBV_UTMi9odv_n3ylqDBzZRaYfteLbtqnp18" width="100px;" alt=""/>
+   f""" <figure style="display:inline-block">
+<a href="http://linkedin.com/in/hardik-kharwa-01458415a/"><img src="https://media-exp1.licdn.com/dms/image/C5103AQGC2BTc2kd8Rw/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=Nz3ku61Ms9pxw2KStmtxpdMtBooh6gP_E8yX0Mru838" width="100px;" alt=""/>
+<figcaption>Dr. Hardik K</figcaption>
+</figure>
+<figure style="display:inline-block">
+<a href="https://www.linkedin.com/in/nivedv/"><img src="https://media-exp1.licdn.com/dms/image/C5103AQEjdERATSU9Tg/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=jfIoDW_2GYKhXTOuprbK-meylbeIpUC4uyfEwwmfbJE" width="100px;" alt=""/>
 <figcaption>Nived V</figcaption>
 </figure>
 <figure style="display:inline-block">
@@ -371,6 +375,10 @@ def write_footer(st):
 <figure style="display:inline-block">
 <a href="https://www.linkedin.com/in/sanjuraj/"><img src="https://media-exp1.licdn.com/dms/image/C4D03AQFpvDs7o7ruxQ/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=01X2PR7G9bOAyybHcTm_k1MNNr5OBK5l8ZXKAZgK_Ts" width="100px;" alt=""/><br />
 <figcaption>Sanju Raj</figcaption>
+</figure>
+<figure style="display:inline-block">
+<a href="https://www.linkedin.com/in/velayudhan/"><img src="https://media-exp1.licdn.com/dms/image/C5103AQHuhlajJWLX4w/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=qt_OrpyudraM0S1hUayPb2fu8ctAF40mWrWXFXwGeoo" width="100px;" alt=""/><br />
+<figcaption>Velayudhan C.P</figcaption>
 </figure>
 <figure style="display:inline-block">
 <a href="https://www.linkedin.com/in/sruthichiramel/"><img src="https://media-exp1.licdn.com/dms/image/C4D03AQHvmWzdAqHb9g/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=0nEzIyaCbh_RmdP4OCCDza54tHl3XlaJr4h2QpWybXY" width="100px;" alt=""/>
