@@ -45,16 +45,20 @@ def display_header(st, p):
         unsafe_allow_html=True,
     )
     st.markdown(
-        """**IMPORTANT NOTICE**: Admissions and Census calculations were previously **undercounting**. Please update your reports generated before """ + p.change_date() + """. See more about changes [here](https://github.com/nived15/chime/)."""
+        """**IMPORTANT NOTICE**: Admissions and Census calculations were previously **undercounting**. Please update your reports generated dynamically. See more about changes [here](https://github.com/nived15/chime/)."""
     )
     st.markdown(
         """*This tool was originally developed by the Predictive Healthcare team at
     Penn Medicine. 
     **It has been opensourced since the outbreak and we have modified it so any hospitals/health authorities in India can use this tool for planning and capacity building.** Please feel free to contact us if you would like to get involved!*"""
     )
-
+    st.subheader("Demo of Covid response tool")
+    st.write(
+        f'<iframe width="100%" height="315" src="https://www.youtube.com/embed/yh4QumvVIR0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br/>',
+        unsafe_allow_html=True,
+    )
     st.markdown(
-        """The estimated number of currently infected individuals is **{total_infections:.0f}**. The **{initial_infections}**
+        """ <br> The estimated number of currently infected individuals is **{total_infections:.0f}**. The **{initial_infections}**
     confirmed cases in the region imply a **{detection_prob_str}** rate of detection. This is based on current inputs for
     Hospitalizations (**{current_hosp}**), Hospitalization rate (**{hosp_rate:.0%}**), Region size (**{S}**),
     and Hospital market share (**{market_share:.0%}**).
@@ -78,7 +82,7 @@ outbreak reduces the doubling time to **{doubling_time_t:.1f}** days, implying a
             relative_contact_rate=p.relative_contact_rate,
             r_t=p.r_t,
             doubling_time_t=p.doubling_time_t,
-        )
+        ),unsafe_allow_html=True
     )
 
     return None
@@ -361,28 +365,28 @@ def write_footer(st):
     st.subheader("Contributors")
     st.markdown(
    f""" <figure style="display:inline-block">
-<a href="http://linkedin.com/in/hardik-kharwa-01458415a/"><img src="https://media-exp1.licdn.com/dms/image/C5103AQGC2BTc2kd8Rw/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=Nz3ku61Ms9pxw2KStmtxpdMtBooh6gP_E8yX0Mru838" width="100px;" alt=""/>
-<figcaption>Dr. Hardik K</figcaption>
+<a href="http://linkedin.com/in/hardik-kharwa-01458415a/" target="_blank"><img src="https://media-exp1.licdn.com/dms/image/C5103AQGC2BTc2kd8Rw/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=Nz3ku61Ms9pxw2KStmtxpdMtBooh6gP_E8yX0Mru838" width="100px;" alt=""/>
+<figcaption style="text-align:center">Dr. Hardik K</figcaption>
 </figure>
 <figure style="display:inline-block">
-<a href="https://www.linkedin.com/in/nivedv/"><img src="https://media-exp1.licdn.com/dms/image/C5103AQEjdERATSU9Tg/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=jfIoDW_2GYKhXTOuprbK-meylbeIpUC4uyfEwwmfbJE" width="100px;" alt=""/>
-<figcaption>Nived V</figcaption>
+<a href="https://www.linkedin.com/in/nivedv/" target="_blank"><img src="https://media-exp1.licdn.com/dms/image/C5103AQEjdERATSU9Tg/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=jfIoDW_2GYKhXTOuprbK-meylbeIpUC4uyfEwwmfbJE" width="100px;" alt=""/>
+<figcaption style="text-align:center">Nived V</figcaption>
 </figure>
 <figure style="display:inline-block">
-<a href="https://www.linkedin.com/in/iamvishnuks"><img src="https://media-exp1.licdn.com/dms/image/C5103AQGW6gixb_k4og/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=9mvXKJ_Rj0Pj7EP4Py6SOrsSp5gV7MUrTl6QWuyv-Ic" width="100px;" alt=""/><br />
-<figcaption>Vishnu KS</figcaption>
+<a href="https://www.linkedin.com/in/iamvishnuks" target="_blank"><img src="https://media-exp1.licdn.com/dms/image/C5103AQGW6gixb_k4og/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=9mvXKJ_Rj0Pj7EP4Py6SOrsSp5gV7MUrTl6QWuyv-Ic" width="100px;" alt=""/><br />
+<figcaption style="text-align:center">Vishnu KS</figcaption>
 </figure>
 <figure style="display:inline-block">
-<a href="https://www.linkedin.com/in/sanjuraj/"><img src="https://media-exp1.licdn.com/dms/image/C4D03AQFpvDs7o7ruxQ/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=01X2PR7G9bOAyybHcTm_k1MNNr5OBK5l8ZXKAZgK_Ts" width="100px;" alt=""/><br />
-<figcaption>Sanju Raj</figcaption>
+<a href="https://www.linkedin.com/in/sanjuraj/" target="_blank"><img src="https://media-exp1.licdn.com/dms/image/C4D03AQFpvDs7o7ruxQ/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=01X2PR7G9bOAyybHcTm_k1MNNr5OBK5l8ZXKAZgK_Ts" width="100px;" alt=""/><br />
+<figcaption style="text-align:center">Sanju Raj</figcaption>
 </figure>
 <figure style="display:inline-block">
-<a href="https://www.linkedin.com/in/velayudhan/"><img src="https://media-exp1.licdn.com/dms/image/C5103AQHuhlajJWLX4w/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=qt_OrpyudraM0S1hUayPb2fu8ctAF40mWrWXFXwGeoo" width="100px;" alt=""/><br />
-<figcaption>Velayudhan C.P</figcaption>
+<a href="https://www.linkedin.com/in/velayudhan/" target="_blank"><img src="https://media-exp1.licdn.com/dms/image/C5103AQHuhlajJWLX4w/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=qt_OrpyudraM0S1hUayPb2fu8ctAF40mWrWXFXwGeoo" width="100px;" alt=""/><br />
+<figcaption style="text-align:center">Velayudhan C.P</figcaption>
 </figure>
 <figure style="display:inline-block">
-<a href="https://www.linkedin.com/in/sruthichiramel/"><img src="https://media-exp1.licdn.com/dms/image/C4D03AQHvmWzdAqHb9g/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=0nEzIyaCbh_RmdP4OCCDza54tHl3XlaJr4h2QpWybXY" width="100px;" alt=""/>
-<figcaption>Sruthi Chiramel</figcaption>
+<a href="https://www.linkedin.com/in/sruthichiramel/" target="_blank"><img src="https://media-exp1.licdn.com/dms/image/C4D03AQHvmWzdAqHb9g/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=0nEzIyaCbh_RmdP4OCCDza54tHl3XlaJr4h2QpWybXY" width="100px;" alt=""/>
+<figcaption style="text-align:center">Sruthi C</figcaption>
 </figure>""",unsafe_allow_html=True)
     st.markdown("")
 
