@@ -141,4 +141,4 @@ class Parameters:
         longer match current results, indicating when users should
         re-run their reports
         """
-        return "March 27 2020"
+        return "April 02 2020"
